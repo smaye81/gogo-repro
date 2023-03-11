@@ -1,0 +1,15 @@
+version: v1
+name: buf.build/sayers/gogo-repro
+deps:
+  - buf.build/cosmos/cosmos-proto
+  - buf.build/cosmos/gogo-proto
+  - buf.build/googleapis/googleapis
+build:
+  excludes:
+  - node_modules
+breaking:
+  use:
+    - FILE
+lint:
+  use:
+    - DEFAULT

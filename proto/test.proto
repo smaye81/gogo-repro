@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package proto.v1;
+
+import "gogoproto/gogo.proto";
+
+message TestMessage {
+  string foo = 1;
+  bool bar = 2;
+  int32 baz = 3 [(gogoproto.nullable) = false];
+}
